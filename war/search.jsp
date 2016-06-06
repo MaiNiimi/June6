@@ -5,7 +5,6 @@
 <title>履修登録</title>
 <script type="text/javascript" src="lib.js"></script>
 <script type="text/javascript">
-        //<!--
         function callback(request){
             var json = eval(request.responseText);
             var res = '';
@@ -28,7 +27,6 @@
             var obj = document.getElementById("datatable");
             obj.innerHTML = res;
         }
-        //-->
         </script>
 </head>
 <body onload="getData(null);">

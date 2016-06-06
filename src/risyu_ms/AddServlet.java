@@ -12,59 +12,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author g14911ih
- */
-
 public class AddServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-	 * methods.
-	 *
-	 * @param request
-	 *            servlet request
-	 * @param response
-	 *            servlet response
-	 * @throws ServletException
-	 *             if a servlet-specific error occurs
-	 * @throws IOException
-	 *             if an I/O error occurs
-	 */
-	// <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on
-	// the + sign on the left to edit the code.">
-	/**
-	 * Handles the HTTP <code>GET</code> method.
-	 *
-	 * @param request
-	 *            servlet request
-	 * @param response
-	 *            servlet response
-	 * @throws ServletException
-	 *             if a servlet-specific error occurs
-	 * @throws IOException
-	 *             if an I/O error occurs
-	 */
 	@Override
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		resp.setContentType("text/plain");
 		resp.getWriter().println("no url...");
 	}
 
-	/**
-	 * Handles the HTTP <code>POST</code> method.
-	 *
-	 * @param request
-	 *            servlet request
-	 * @param response
-	 *            servlet response
-	 * @throws ServletException
-	 *             if a servlet-specific error occurs
-	 * @throws IOException
-	 *             if an I/O error occurs
-	 */
 	@Override
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setCharacterEncoding("UTF-8");
@@ -87,11 +43,6 @@ public class AddServlet extends HttpServlet {
 		//resp.sendRedirect("/main.jsp");
 	}
 
-	/**
-	 * Returns a short description of the servlet.
-	 *
-	 * @return a String containing servlet description
-	 */
 	@Override
 	public String getServletInfo() {
 		return "Short description";
